@@ -1,0 +1,35 @@
+Introduction:
+Todo list apps are a fantastic way to boost productivity and are a great way to stay organized and manage your tasks effectively. 
+
+Stacks:
+HTML, CSS, and JavaScript.
+
+The Layout/Structure:
+
+TO-DO APP/
+│
+├── index.html
+├── style.css
+├── script.js
+├── img/
+│
+├── README.md
+
+Explanation of the structure:
+
+> index.html: The main HTML file for your web application.
+
+> script.css: The main CSS files for styling your web pages.
+
+> script.js: The main JavaScript file where you write your application logic.
+
+> img/: Store image files used in your application, such as logos or other graphics.
+
+> Readme: A documentation file that explains the project, its structure, and how to run it or work on it.
+
+BROWSER COMPACTIBILITY
+It works on all major modern browsers
+
+DATE DEVELOPED
+26th October, 2024
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- This in-line style in the div applies to the footer -->
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <body>
+
+      <div class="container">
+      <!-- Inside the container, we'll add an input field for adding tasks, a list to display the tasks, and buttons for adding and removing tasks.-->
+
+        <div class="todo-header">
+        <h2>ToDo List</h2>
+        <img src="img/images.png" height="50px" />
+        </div>
+
+        <div class="todo-body">
+          <input
+              type="text"
+              id="todoText"
+              class="todo-input"
+              placeholder="Input your tasks..."
+          />
+          <img
+              src="img/circle-plus.svg"
+              alt="+"
+              id="AddUpdateClick"
+              onclick="CreateToDoItems();"
+          />
+        </div>
+
+        <!-- 
+        Create a List with Validation to display Todo information 
+        
+        Here we'll add h5 tag to show the validation of what user's activity. Ex: Adding, Updating, Completing or Deleting Todo by User, and then will add the ul unordered list to add the list of data with information added by the user.
+        -->
+        <h5 id="Alert"></h5>
+        
+        <ul id="list-items" class="list-items"></ul>
+
+      </div>
+
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+
+    <!-- Footer section-->
+  <footer style="color: green; margin-top: 5px; font-weight: bold;">&#169; Powered by Kell Ojoma</p>
+</footer>
+</html>
