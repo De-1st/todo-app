@@ -139,7 +139,7 @@ function DeleteToDoItems(e) {
   let deleteValue =
     e.parentElement.parentElement.querySelector("div").innerText;
 
-  if (confirm(`Are you sure. Due you want to delete "${deleteValue}"!`)) {
+  if (confirm(`Are you sure? Do you want to delete "${deleteValue}"!`)) {
     e.parentElement.parentElement.setAttribute("class", "deleted-item");
     todoValue.focus();
 
