@@ -170,3 +170,46 @@ animation-iteration-count: 2;
   animation: bounce .3s; /* Bouncing animation continuously */
   animation-iteration-count: 2;  
 }
+
+@media (max-width: 511px) {
+
+  .container {
+    background: #ffffff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);;
+  }
+  
+  .todo-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .todo-body input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1px 0;
+    font-size: 18px;
+    width: 100px; height: 20px
+    ;
+  }
+
+  /* .todo-body img {
+    cursor: pointer;
+    border-radius: 40px;
+    height: 55px;
+    width: 55px;
+    padding: 15px;
+    background: limegreen;
+    border-style: solid;
+  } */
+
+}
