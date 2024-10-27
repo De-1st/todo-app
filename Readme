@@ -27,6 +27,15 @@ Explanation of the structure:
 
 > Readme: A documentation file that explains the project, its structure, and how to run it or work on it.
 
+FEATURES
+1. After input, you can press the return key instead of clicking on the add-plus icon.
+2. If you enter an empty text, you will get a prompt letting you know that no text has been entered.
+2. If an item is already on the list, you will get an InnerText prompt indicating that an item already exist.
+2. When the added items are listed, you can double click on the item text to strike them off as completed.
+3. When you hover on the list item pen(edit) and trash-can(delete) icon, they bounces twice vertically.
+4. When you add a new task, delete a task, or update, a text appears and fade out slowly letting you know of a successful operation.
+4. Upon deleting a task, you get a browser warning alert to proceed or ignore.
+
 BROWSER COMPACTIBILITY
 It works on all major modern browsers
 
