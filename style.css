@@ -198,8 +198,12 @@ animation-iteration-count: 2;
     background: transparent;
     padding: 1px 0;
     font-size: 18px;
-    width: 100px; height: 20px
-    ;
+    width: 100px; height: 20px;
+  }
+
+  .typed-container .typed{
+    color: green;
+    font-size: 10px;
   }
 
   /* .todo-body img {
@@ -212,4 +216,16 @@ animation-iteration-count: 2;
     border-style: solid;
   } */
 
+}
+
+/* Creating a typwriter text style with an infinite blink cursor */
+
+.typed-container{
+  font-family: "arial";
+  font-size: 15px;
+  color: green;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
 }

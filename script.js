@@ -4,6 +4,7 @@ const todoValue = document.getElementById("todoText");
 const todoAlert = document.getElementById("Alert");
 const listItems = document.getElementById("list-items");
 const addUpdate = document.getElementById("AddUpdateClick");
+const typeContainer = document.getElementById('typed');
 
 todoValue.addEventListener('keypress', function (e){
   if (e.key === 'Enter') {
@@ -46,6 +47,8 @@ function CreateToDoItems() {
     li.innerHTML = todoItems;
     listItems.appendChild(li);
 
+    typeContainer.innerText = "Double-click on the to-do list to complete task.";
+
     if (!todo) {
       todo = [];
     }
@@ -68,6 +71,7 @@ function ReadToDoItems() {
     if (element.status) {
       style = "style='text-decoration: line-through; color: red;'";
     }
+
     const todoItems = `<div ${style} title="Double-click To Complete" ondblclick="CompletedToDoItems(this)">${
       element.item
     }
@@ -139,7 +143,7 @@ function DeleteToDoItems(e) {
   let deleteValue =
     e.parentElement.parentElement.querySelector("div").innerText;
 
-  if (confirm(`Are you sure? Do you want to delete "${deleteValue}"!`)) {
+  if (confirm(`Are you sure? Do you want to delete "${deleteValue}"?`)) {
     e.parentElement.parentElement.setAttribute("class", "deleted-item");
     todoValue.focus();
 
